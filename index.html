@@ -1,99 +1,193 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="es-UY">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Federico Stipanicic — Oftalmología. Cirugía de catarata, cirugía refractiva y segmento anterior.">
-<title>Federico Stipanicic | Oftalmología</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#193c46">
+  <meta name="description" content="Dr. Federico Stipanicic, oftalmólogo en Uruguay. Consulta oftalmológica, cirugía de catarata, cirugía refractiva y córnea. Evaluación y planificación individual.">
+  <title>Dr. Federico Stipanicic · Oftalmología en Uruguay</title>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_UY">
+  <meta property="og:title" content="Dr. Federico Stipanicic · Oftalmología">
+  <meta property="og:description" content="Consulta oftalmológica, cirugía de catarata y cirugía refractiva. Evaluación clínica y planificación quirúrgica.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Federico Stipanicic","honorificPrefix":"Dr.","jobTitle":"Médico especialista en Oftalmología","description":"Docente Asistente, Grado 2 de Oftalmología en la Universidad de la República.","email":"federicostipanicic@gmail.com","telephone":"+59894106828","alumniOf":{"@type":"CollegeOrUniversity","name":"Universidad de la República"},"knowsAbout":["Oftalmología","Cirugía de catarata","Cirugía refractiva","Córnea"]}
+  </script>
 </head>
 <body>
-<header class="site-header"><div class="container nav-wrap">
-<a class="brand" href="#inicio"><span class="brand-mark">FS</span><span><strong>Dr. Federico Stipanicic</strong><small>Oftalmología — Uruguay</small></span></a>
-<button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-<nav class="nav"><a href="#especialidades">Especialidades</a><a href="#sobre-mi">Sobre mí</a><a href="#tecnologia">Tecnología</a><a href="#informacion-util">Información útil</a><a href="#contacto" class="nav-cta">Agendar consulta</a></nav>
-</div></header>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Dr. Federico Stipanicic, inicio">
+        <span class="brand-mark" aria-hidden="true">FS</span>
+        <span><strong>Dr. Federico Stipanicic</strong><small>Oftalmología · Uruguay</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="navegacion" aria-expanded="false" hidden><span class="menu-icon" aria-hidden="true"></span><span class="menu-label">Menú</span></button>
+      <nav class="nav" id="navegacion" aria-label="Navegación principal">
+        <a href="#especialidades">Especialidades</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#tecnologia">Tecnología</a>
+        <a href="#informacion-util">Preguntas frecuentes</a>
+        <a class="button button-primary nav-cta" href="#contacto">Agendar consulta</a>
+      </nav>
+    </div>
+  </header>
 
-<main id="inicio">
-<section class="hero"><div class="container hero-grid"><div>
-<p class="eyebrow">Oftalmología · Cirugía de catarata · Cirugía refractiva</p>
-<h1>Ver bien es importante.<br><em>Elegir bien, también.</em></h1>
-<p class="hero-lead">Consulta oftalmológica, cirugía de catarata y cirugía refractiva, así como el tratamiento de patologías del segmento anterior, con una planificación personalizada para cada paciente.</p>
-<div class="hero-actions"><a class="button button-primary" href="#contacto">Agendar consulta</a><a class="button button-ghost" href="#sobre-mi">Conocer mi formación</a></div>
-<div class="hero-proof"><div><strong>+9</strong><span>años de experiencia quirúrgica</span></div><div><strong>+10</strong><span>años de docencia universitaria</span></div><div><strong>+2500</strong><span>cirugías oftalmológicas</span></div></div>
-</div><div class="hero-image hero-portrait"><img src="retrato-profesional.png" alt="Retrato profesional del Dr. Federico Stipanicic" width="1056" height="1408" loading="eager" fetchpriority="high"></div></div></section>
+  <main id="contenido" tabindex="-1">
+    <section class="hero" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="accent-line" aria-hidden="true"></span>Oftalmología en Uruguay</p>
+          <h1 id="titulo-inicio">Ver bien es importante.<br><em>Elegir bien, también.</em></h1>
+          <p class="hero-specialties">Cirugía de catarata · Cirugía refractiva</p>
+          <p class="hero-lead">Consulta oftalmológica, cirugía de catarata y cirugía refractiva. Evaluación clínica y planificación individualizada de cada tratamiento.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#contacto">Agendar consulta</a><a class="button button-soft" href="#sobre-mi">Conocer mi formación</a></div>
+        </div>
+        <figure class="hero-portrait">
+          <img src="assets/retrato-800.webp" srcset="assets/retrato-480.webp 480w, assets/retrato-800.webp 800w, assets/retrato-1086.webp 1086w" sizes="(min-width: 1200px) 420px, (min-width: 900px) 38vw, (min-width: 600px) 360px, calc(100vw - 48px)" width="1086" height="1448" fetchpriority="high" alt="Dr. Federico Stipanicic con túnica médica">
+          <figcaption><strong>Dr. Federico Stipanicic</strong><span>Médico especialista en Oftalmología</span></figcaption>
+        </figure>
+        <dl class="hero-proof">
+          <div><dt>Años de experiencia quirúrgica</dt><dd>+9</dd></div>
+          <div><dt>Años de docencia universitaria</dt><dd>+10</dd></div>
+          <div><dt>Cirugías oftalmológicas</dt><dd>+2500</dd></div>
+        </dl>
+      </div>
+    </section>
 
-<section id="especialidades" class="section"><div class="container"><div class="section-head"><div><p class="section-kicker">Áreas de especialización</p><h2>Un tratamiento pensado específicamente para cada paciente.</h2></div><p></p></div>
-<div class="cards"><article class="card"><span class="card-number">01</span><h3>Cirugía de catarata</h3><p>Cirugía de catarata con selección individualizada de lente intraocular y planificación basada en la anatomía ocular y el estilo de vida.</p><a href="#catarata">Ver más →</a></article>
-<article class="card"><span class="card-number">02</span><h3>Cirugía refractiva</h3><p>Diferentes técnicas de láser corneal, como femtoLASIK, PRK y CLEAR, así como lentes fáquicos intraoculares.</p><a href="#refractiva">Ver más →</a></article>
-<article class="card"><span class="card-number">03</span><h3>Segmento anterior</h3><p>Abordaje de patologías y necesidades del segmento anterior, incluyendo pterigión y crosslinking corneal.</p><a href="#segmento-anterior">Ver más →</a></article></div></div></section>
+    <section class="section specialties" id="especialidades" aria-labelledby="titulo-especialidades">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">Actividad clínica y quirúrgica</p><h2 id="titulo-especialidades">Áreas de especialización.</h2></div><p>Diagnóstico y tratamiento de enfermedades oculares, con especial énfasis en cirugía de catarata, cirugía refractiva y córnea.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><span class="card-number">01</span><h3>Cirugía de catarata</h3><p>Tratamiento quirúrgico de la catarata con selección de la lente intraocular según la evaluación clínica y las necesidades visuales.</p><a class="text-link pill-link" href="#catarata">Conocer las opciones <span class="sr-only">de cirugía de catarata</span></a></article>
+          <article class="service-card"><span class="card-number">02</span><h3>Cirugía refractiva</h3><p>Procedimientos para reducir la dependencia de anteojos o lentes de contacto.</p><a class="text-link pill-link" href="#refractiva">Conocer las opciones <span class="sr-only">de cirugía refractiva</span></a></article>
+          <article class="service-card"><span class="card-number">03</span><h3>Córnea y segmento anterior</h3><p>Diagnóstico y tratamiento de enfermedades de la parte anterior del ojo, como pterigión y queratocono.</p><a class="text-link pill-link" href="#segmento-anterior">Conocer los tratamientos</a></article>
+        </div>
+        <div class="consultation-strip"><div><h3>Consulta oftalmológica general.</h3><p>Controles de visión, evaluación de síntomas y enfermedades oculares.</p></div><a class="text-link pill-link" href="#contacto">Agendar consulta</a></div>
+      </div>
+    </section>
 
-<section id="catarata" class="section split-section"><div class="container split-grid catarata-layout"><div>
-<p class="section-kicker">01 · Cirugía de catarata</p><h2>Volver a ver con claridad.</h2>
-<p><strong>¿Qué es una catarata?</strong></p><p>La catarata aparece cuando el cristalino, la lente natural del ojo, pierde su transparencia. Puede producir visión borrosa, menor nitidez, dificultad para ver de noche, deslumbramiento y cambios frecuentes en la graduación.</p>
-<p>La cirugía de catarata no es igual para todos. Evalúo cada paciente de forma individual para conocer las características de sus ojos, sus necesidades visuales y las actividades que realiza habitualmente.</p>
-<p>A partir de esa evaluación, selecciono el tipo de lente intraocular más adecuado para cada caso. Trabajo con lentes monofocales, EDOF, multifocales y tóricas, y realizo cirugía de catarata mediante técnica de ultrasonido, con la posibilidad de incorporar asistencia de láser de femtosegundo.</p>
-<div class="lens-options">
-<h3 class="subsection-title">Tipos de lentes intraoculares</h3>
-<div class="dropdown-grid lens-dropdowns">
-<details><summary>Monofocales</summary><p>Están diseñadas para ofrecer una buena visión a una distancia determinada, habitualmente de lejos. Para otras distancias puede ser necesario utilizar anteojos.</p></details>
-<details><summary>EDOF</summary><p>Amplían el rango de visión respecto de una lente monofocal, permitiendo una buena visión de lejos y una mayor independencia de anteojos para distancias intermedias.</p></details>
-<details><summary>Multifocales</summary><p>Están diseñadas para proporcionar visión a diferentes distancias, buscando reducir la dependencia de anteojos para lejos, intermedio y cerca.</p></details>
-<details><summary>Tóricas</summary><p>Están diseñadas para corregir el astigmatismo además de la graduación necesaria para la visión después de la cirugía.</p></details>
-</div></div>
-<div class="feature-box image-placeholder compact"><div class="placeholder-inner"><span>IMAGEN</span><small>Cirugía de catarata / lente intraocular / tecnología</small></div></div></div></section>
+    <section class="section section-white" id="catarata" aria-labelledby="titulo-catarata">
+      <div class="container treatment-grid">
+        <div class="treatment-copy">
+          <p class="eyebrow">01 · Cirugía de catarata</p><h2 id="titulo-catarata">Evaluación y tratamiento<br>de la catarata.</h2>
+          <p class="intro">La catarata aparece cuando el cristalino, la lente natural del ojo, pierde su transparencia.</p>
+          <p>Puede causar visión borrosa, dificultad para ver de noche, deslumbramiento y cambios frecuentes en la graduación. El único tratamiento definitivo es la cirugía.</p>
+          <h3>Planificación quirúrgica.</h3>
+          <p>Durante el procedimiento, el cristalino opaco se reemplaza por una lente intraocular. La selección se basa en la salud ocular, las actividades habituales y los requerimientos visuales del paciente.</p>
+          <p>Realizo cirugía mediante ultrasonido, con la posibilidad de incorporar asistencia de láser de femtosegundo.</p>
+          <a class="text-link treatment-link pill-link" href="#contacto">Agendar consulta</a>
+        </div>
+        <aside class="lens-panel" aria-labelledby="titulo-lentes">
+          <p class="eyebrow">La elección de la lente</p><h3 id="titulo-lentes">Tipos de lentes<br>intraoculares</h3>
+          <p>Las lentes se diferencian por su rango de enfoque y su capacidad para corregir el astigmatismo.</p>
+          <div class="accordion accordion-light">
+            <details><summary>Monofocales <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Ofrecen un foco principal, habitualmente para ver de lejos. Para otras distancias, como la lectura, suele ser necesario usar anteojos.</p></div></details>
+            <details><summary>EDOF <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Son lentes de profundidad de foco extendida. Amplían el rango de visión, especialmente de lejos a distancias intermedias. Para lectura fina pueden requerirse anteojos.</p></div></details>
+            <details><summary>Multifocales <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Buscan reducir la dependencia de anteojos a diferentes distancias. Su conveniencia se evalúa según la salud ocular, las actividades y las expectativas de cada persona.</p></div></details>
+            <details><summary>Tóricas <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Corrigen el astigmatismo. Esta característica puede combinarse con una lente monofocal, EDOF o multifocal: no es una categoría de enfoque separada.</p></div></details>
+          </div>
+          <p class="panel-note">La elección se define durante la evaluación preoperatoria.</p>
+        </aside>
+      </div>
+    </section>
 
-<section id="refractiva" class="section tinted"><div class="container split-grid"><div class="feature-box image-placeholder compact"><div class="placeholder-inner"><span>IMAGEN</span><small>Cirugía / tecnología / detalle clínico</small></div></div><div>
-<p class="section-kicker">02 · Cirugía refractiva</p><h2>Volver a ver bien, con libertad.</h2>
-<p>La cirugía refractiva busca reducir o eliminar la dependencia de anteojos o lentes de contacto. Para lograrlo, evalúo cada caso de manera individual y elijo la técnica que considero más adecuada para cada paciente.</p>
-<p>Realizo diferentes procedimientos láser, como PRK, LASIK, femtoLASIK y CLEAR, además de lentes intraoculares en pacientes seleccionados.</p>
-<div class="tech-list refractive-dropdowns">
-<details><summary>Miopía</summary><p>La miopía dificulta ver con claridad los objetos que están a distancia. Puede corregirse mediante diferentes técnicas de cirugía refractiva, según las características de cada paciente.</p></details>
-<details><summary>Hipermetropía</summary><p>Puede dificultar la visión cercana y, en algunos casos, también la lejana. La técnica adecuada depende de la graduación y de las características de cada ojo.</p></details>
-<details><summary>Astigmatismo</summary><p>Produce una visión desenfocada o distorsionada a diferentes distancias. Puede tratarse mediante distintas técnicas refractivas según cada caso.</p></details>
-<details><summary>Presbicia</summary><p>Con el paso de los años, el ojo pierde progresivamente la capacidad de enfocar de cerca. Existen diferentes alternativas para disminuir la dependencia de anteojos, que se evalúan de acuerdo con las características y necesidades de cada paciente.</p></details>
-</div></div></div></section>
+    <section class="section section-tinted" id="refractiva" aria-labelledby="titulo-refractiva">
+      <div class="container treatment-grid image-first">
+        <div class="treatment-copy"><p class="eyebrow">02 · Cirugía refractiva</p><h2 id="titulo-refractiva">Corrección de<br>defectos refractivos.</h2>
+          <p class="intro">La cirugía refractiva permite reducir la dependencia de anteojos o lentes de contacto.</p>
+          <p>La elección del procedimiento requiere evaluar la graduación, su estabilidad, las características de la córnea y la salud ocular.</p>
+          <p>Realizo PRK, LASIK, femtoLASIK y CLEAR, además de cirugía con lentes intraoculares en pacientes seleccionados.</p>
+          <div class="accordion">
+            <details><summary>Miopía <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Dificulta ver con claridad los objetos a distancia. Las opciones de corrección dependen de la graduación y de las características de cada ojo.</p></div></details>
+            <details><summary>Hipermetropía <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Puede dificultar la visión cercana y, en algunos casos, también la lejana. La evaluación permite definir la alternativa más adecuada.</p></div></details>
+            <details><summary>Astigmatismo <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Produce visión desenfocada o distorsionada a diferentes distancias. Puede corregirse mediante distintas alternativas según cada caso.</p></div></details>
+            <details><summary>Presbicia <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Con los años, el ojo pierde capacidad para enfocar de cerca. Existen alternativas para disminuir la dependencia de anteojos, que se evalúan según las características y necesidades de cada paciente.</p></div></details>
+          </div>
+        </div>
+        <figure class="treatment-figure refractive-figure"><img src="assets/refractiva-1100.webp" srcset="assets/refractiva-640.webp 640w, assets/refractiva-1100.webp 1100w" sizes="(min-width: 1200px) 528px, (min-width: 900px) 44vw, calc(100vw - 48px)" width="1100" height="825" loading="lazy" decoding="async" alt="Ilustración conceptual de un ojo durante un tratamiento láser"><figcaption>Ilustración conceptual de cirugía refractiva.</figcaption></figure>
+      </div>
+    </section>
 
-<section id="segmento-anterior" class="section"><div class="container split-grid segment-section">
-<div>
-<p class="section-kicker">03 · Segmento anterior</p><h2>Cuidar la parte anterior del ojo.</h2>
-<p>El segmento anterior es la parte delantera del ojo, donde se encuentran estructuras como la córnea, el iris y el cristalino. En esta zona pueden aparecer distintas patologías que requieren una evaluación adecuada y un tratamiento específico.</p>
-<p>Realizo evaluación y tratamiento de patologías de la córnea y del segmento anterior, incluyendo <strong>pterigión</strong> y <strong>queratocono</strong>, con procedimientos como el <strong>crosslinking corneal</strong>, según las características de cada paciente.</p>
-</div>
-<div class="feature-box image-placeholder compact"><div class="placeholder-inner"><span>IMAGEN</span><small>Córnea / segmento anterior / procedimiento</small></div></div>
-</div></section>
+    <section class="section section-white" id="segmento-anterior" aria-labelledby="titulo-segmento">
+      <div class="container treatment-grid">
+        <div class="treatment-copy"><p class="eyebrow">03 · Segmento anterior</p><h2 id="titulo-segmento">Córnea y<br>segmento anterior.</h2>
+          <p class="intro">El segmento anterior es la parte delantera del ojo. Incluye estructuras como la córnea, el iris y el cristalino.</p>
+          <p>Realizo evaluación y tratamiento de enfermedades de la córnea y del segmento anterior, incluyendo pterigión y queratocono.</p>
+          <div class="clinical-note"><h3>Queratocono y crosslinking</h3><p>En el queratocono, el crosslinking corneal es una de las opciones para intentar frenar la progresión. Su indicación depende de la evaluación y de los estudios de cada paciente.</p></div>
+          <a class="text-link treatment-link pill-link" href="#contacto">Agendar una evaluación</a>
+        </div>
+        <figure class="treatment-figure clinical-figure"><img src="assets/segmento-anterior-900.webp" srcset="assets/segmento-anterior-480.webp 480w, assets/segmento-anterior-900.webp 900w" sizes="(min-width: 1200px) 370px, (min-width: 900px) 33vw, (min-width: 600px) 360px, calc(100vw - 48px)" width="900" height="1200" loading="lazy" decoding="async" alt="Fotografía clínica del segmento anterior del ojo"><figcaption>Evaluación de las estructuras anteriores del ojo.</figcaption></figure>
+      </div>
+    </section>
 
-<section id="tecnologia" class="section"><div class="container"><div class="section-head"><div><p class="section-kicker">Tecnología</p><h2>Medir mejor para decidir mejor.</h2></div><p>Los estudios no son un fin en sí mismos: aportan información para comprender el ojo y planificar con mayor precisión.</p></div>
-<div class="technology-philosophy"><p class="section-kicker">Una forma de trabajar</p><h3>La tecnología no reemplaza al cirujano.<br>Le permite tomar decisiones más precisas.</h3><p>En cirugía ocular, cada detalle cuenta. La evaluación clínica, los estudios complementarios y la planificación quirúrgica permiten adaptar la estrategia a las características del ojo, las necesidades visuales y las expectativas de cada persona.</p></div>
-<div class="technology-grid"><article><span>01</span><h3>Pentacam AXL</h3><p>Estudio detallado de la córnea que permite conocer su forma y características con precisión, además de medir el ojo para planificar distintos procedimientos quirúrgicos.</p></article>
-<article><span>02</span><h3>Argos · Verion</h3><p>Mediciones detalladas del ojo que permiten calcular la lente intraocular y planificar la cirugía de catarata de forma personalizada.</p></article>
-<article><span>03</span><h3>OCT</h3><p>Evaluación de la mácula, nervio óptico y segmento anterior cuando el caso lo requiere.</p></article>
-<article><span>04</span><h3>Planificación individual</h3><p>Integración de la evaluación clínica y los estudios para adaptar la estrategia al paciente.</p></article></div></div></section>
+    <section class="section technology" id="tecnologia" aria-labelledby="titulo-tecnologia">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">Tecnología</p><h2 id="titulo-tecnologia">Estudios y planificación.</h2></div><p>Los estudios complementarios aportan información sobre la anatomía y la función ocular. Sus resultados se interpretan junto con el examen clínico para orientar el diagnóstico y el tratamiento.</p></div>
+        <div class="technology-grid">
+          <article><span class="card-number">01</span><h3>Pentacam AXL</h3><p>Estudia la forma y las características de la córnea, y aporta mediciones del ojo para planificar distintos procedimientos.</p></article>
+          <article><span class="card-number">02</span><h3>Argos · Verion</h3><p>Permiten medir el ojo, calcular la lente intraocular y guiar la planificación de la cirugía de catarata.</p></article>
+          <article><span class="card-number">03</span><h3>OCT</h3><p>Obtiene imágenes detalladas de la mácula, el nervio óptico y el segmento anterior, según lo que requiera cada caso.</p></article>
+          <article><span class="card-number">04</span><h3>Planificación individual</h3><p>Integra la evaluación clínica, los estudios y los requerimientos visuales para definir la estrategia de tratamiento.</p></article>
+        </div>
+      </div>
+    </section>
 
-<section id="sobre-mi" class="section about"><div class="container about-grid"><div class="about-image about-photo"><img src="foto-quirofano.jpg" alt="Fotografía del Dr. Federico Stipanicic durante una intervención quirúrgica" loading="lazy"></div><div>
-<p class="section-kicker">Sobre mí</p><h2>Medicina, docencia y cirugía.</h2>
-<p>Soy médico y especialista en Oftalmología por la Universidad de la República, con una trayectoria que combina actividad clínica, formación continua, docencia universitaria y práctica quirúrgica.</p>
-<p>Actualmente soy <strong>Docente Asistente, Grado 2 de Oftalmología</strong> en la Universidad de la República. Mi actividad docente comenzó hace más de una década, primero en Fisiopatología y posteriormente en Oftalmología.</p>
-<p>Comencé a realizar cirugía oftalmológica durante la residencia en 2017. Desde entonces, la práctica quirúrgica ha sido un componente central de mi actividad profesional.</p>
-<div class="credentials"><div><strong>Médico</strong><span>Universidad de la República</span></div><div><strong>Especialista en Oftalmología</strong><span>Universidad de la República</span></div><div><strong>Docente Asistente, Grado 2</strong><span>Cátedra de Oftalmología · Universidad de la República</span></div><div><strong>Formación internacional</strong><span>Houston · Sevilla · Buenos Aires · Río de Janeiro · Ciudad de México</span></div></div></div></div></section>
+    <section class="section section-white" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+      <div class="container about-grid">
+        <div class="about-copy"><p class="eyebrow">Sobre mí</p><h2 id="titulo-sobre-mi">Medicina, docencia<br>y cirugía.</h2>
+          <p class="intro">Soy médico especialista en Oftalmología por la Universidad de la República.</p>
+          <p>Mi actividad combina atención de pacientes, cirugía, formación continua y docencia universitaria. Comencé a realizar cirugía oftalmológica durante la residencia, en 2017.</p>
+          <dl class="credentials"><div><dt>Docencia universitaria</dt><dd>Docente Asistente, Grado 2 de Oftalmología en la Universidad de la República. Más de una década de docencia en Fisiopatología y Oftalmología.</dd></div><div><dt>Formación internacional</dt><dd>Houston · Sevilla · Buenos Aires · Río de Janeiro · Ciudad de México.</dd></div></dl>
+          <details class="academic-details"><summary>Actividad académica y sociedades científicas <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><h3>Congresos e investigación</h3><p>Participación como expositor en congresos nacionales e internacionales y en trabajos de investigación científica.</p><h3>Sociedades científicas</h3><ul class="societies"><li><strong>ASCRS</strong><span>American Society of Cataract and Refractive Surgery</span></li><li><strong>ASUO</strong><span>Asociación Uruguaya de Oftalmología</span></li><li><strong>SUCRyC</strong><span>Sociedad Uruguaya de Catarata, Cirugía Refractiva y Córnea</span></li></ul></div></details>
+        </div>
+        <figure class="treatment-figure about-figure"><img src="assets/quirofano-900.webp" srcset="assets/quirofano-480.webp 480w, assets/quirofano-900.webp 900w" sizes="(min-width: 1200px) 420px, (min-width: 900px) 38vw, (min-width: 600px) 420px, calc(100vw - 48px)" width="900" height="1200" loading="lazy" decoding="async" alt="Dr. Federico Stipanicic durante una intervención quirúrgica"><figcaption>La práctica quirúrgica, parte central de mi actividad.</figcaption></figure>
+      </div>
+    </section>
 
-<section class="section academic"><div class="container"><div class="section-head"><div><p class="section-kicker">Actividad académica</p><h2>La práctica clínica también se construye enseñando y aprendiendo.</h2></div></div>
-<div class="academic-grid"><div><strong>Docencia</strong><p>Más de 10 años de docencia universitaria en Fisiopatología y Oftalmología.</p></div><div><strong>Congresos</strong><p>Participación como expositor y actividad científica en congresos nacionales e internacionales.</p></div><div><strong>Investigación</strong><p>Participación en trabajos de investigación científica en el ámbito de la oftalmología y la salud.</p></div><div><strong>Sociedades científicas</strong><p>ASCRS · American Society of Cataract and Refractive Surgery<br>ASUO · Asociación Uruguaya de Oftalmología<br>SUCRyC · Sociedad Uruguaya de Catarata, Cirugía Refractiva y Córnea</p></div></div></div></section>
+    <section class="section faq" id="informacion-util" aria-labelledby="titulo-preguntas">
+      <div class="container faq-grid">
+        <div class="faq-heading"><p class="eyebrow">Información para pacientes</p><h2 id="titulo-preguntas">Preguntas frecuentes.</h2><p>Información general sobre los procedimientos, la anestesia y la recuperación. Las indicaciones específicas se establecen durante la consulta.</p></div>
+        <div class="accordion faq-accordion">
+          <details><summary>¿Cómo se elige la lente para la cirugía de catarata? <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>La elección considera la anatomía y la salud ocular, las actividades habituales y las expectativas del paciente. No existe una única lente adecuada para todos los casos.</p></div></details>
+          <details><summary>¿Todos pueden hacerse cirugía refractiva? <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>No. Se requiere una evaluación completa, especialmente de la córnea, la graduación y su estabilidad, para determinar si la cirugía es una opción adecuada.</p></div></details>
+          <details><summary>¿Cuánto dura la cirugía de catarata? <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Como referencia, suele durar alrededor de 20 minutos, aunque depende de las características de cada caso. La preparación y la recuperación inmediata requieren tiempo adicional.</p></div></details>
+          <details><summary>¿Cuándo puedo retomar mis actividades? <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Depende de la cirugía, la evolución y el tipo de actividad. En algunos casos es posible retomar tareas de oficina al día siguiente. El ejercicio, los esfuerzos y la conducción requieren indicaciones específicas.</p></div></details>
+          <details><summary>¿Qué tipo de anestesia se utiliza? <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>En muchas cirugías de catarata y refractivas se utiliza anestesia local en gotas. Según el procedimiento y las necesidades del paciente, pueden requerirse otras medidas anestésicas o sedación.</p></div></details>
+          <details><summary>¿Duele la cirugía? <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Con la anestesia, habitualmente no se siente dolor durante el procedimiento, aunque pueden percibirse luces, contacto o presión. El equipo supervisa el confort del paciente durante la cirugía.</p></div></details>
+        </div>
+      </div>
+    </section>
 
-<section id="informacion-util" class="section faq"><div class="container narrow"><p class="section-kicker">Preguntas frecuentes</p>
-<details><summary>¿Cómo se decide qué lente colocar en una cirugía de catarata?</summary><p>Se analiza la anatomía ocular, la salud del ojo, las necesidades visuales, las actividades habituales y las expectativas del paciente. No existe una única lente ideal para todas las personas.</p></details>
-<details><summary>¿Todos los pacientes pueden hacerse cirugía refractiva?</summary><p>No. La indicación requiere una evaluación oftalmológica completa, especialmente de la córnea y de la estabilidad de la graduación.</p></details>
-<details><summary>¿Qué papel tiene la tecnología en la cirugía?</summary><p>Permite obtener mediciones más precisas, analizar la anatomía ocular y planificar mejor. La tecnología es una herramienta dentro de una decisión médica integral; no reemplaza el criterio del cirujano.</p></details>
-<details><summary>¿Cuánto dura la cirugía?</summary><p>La duración depende del tipo de cirugía y de las características de cada caso. Como referencia, una cirugía de catarata suele durar alrededor de <strong>20 minutos</strong>.</p></details>
-<details><summary>¿Cuándo puedo reintegrarme a mis actividades habituales?</summary><p>Depende del tipo de cirugía y de las actividades que realice cada persona. En muchos casos, es posible <strong>retomar el trabajo al día siguiente</strong>, siempre que la actividad lo permita.</p></details>
-<details><summary>¿Qué tipo de anestesia se utiliza?</summary><p>En la mayoría de las cirugías se utiliza <strong>anestesia local en gotas</strong>, lo que permite realizar el procedimiento de forma confortable, disminuir los riesgos asociados a otros tipos de anestesia y facilitar una recuperación más rápida.</p></details>
-<details><summary>¿Duele la cirugía?</summary><p>No. La cirugía se realiza con anestesia local en gotas, por lo que <strong>habitualmente no se siente dolor durante el procedimiento</strong>.</p></details>
-</div></section>
-
-<section id="contacto" class="contact"><div class="container contact-grid"><div><p class="section-kicker">Agendar consulta</p><h2>Una evaluación es el primer paso para saber qué opción es adecuada para vos.</h2></div>
-<div class="contact-actions"><a class="button button-light" href="mailto:federicostipanicic@gmail.com">Enviar email</a></div></div></section>
-</main>
-<footer class="footer"><div class="container footer-grid"><div><strong>Dr. Federico Stipanicic</strong><span>Oftalmología · Montevideo, Uruguay</span></div><span>© 2026 Federico Stipanicic</span></div></footer>
-<script src="script.js"></script>
-</body></html>
+    <section class="contact section" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="container contact-grid"><div><p class="eyebrow">Contacto</p><h2 id="titulo-contacto">Consultas y<br>coordinación.</h2></div>
+        <div class="contact-card">
+          <p class="contact-name">Dr. Federico Stipanicic</p>
+          <p>Oftalmología · Uruguay</p>
+          <a class="contact-phone" href="tel:+59894106828" aria-label="Llamar al +598 94 106 828"><span>Teléfono</span><strong>+598 94 106 828</strong></a>
+          <div class="contact-buttons">
+            <a class="button button-whatsapp" href="https://wa.me/59894106828" target="_blank" rel="noopener noreferrer">Enviar WhatsApp</a>
+            <a class="button button-light" href="mailto:federicostipanicic@gmail.com?subject=Consulta%20oftalmol%C3%B3gica">Enviar email</a>
+          </div>
+          <a class="email-link" href="mailto:federicostipanicic@gmail.com">federicostipanicic@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><div><strong>Dr. Federico Stipanicic</strong><span>Oftalmología · Uruguay</span></div><p>© <span data-year>2026</span> Federico Stipanicic</p><a class="text-link" href="#inicio">Volver al inicio <span aria-hidden="true">↑</span></a></div></footer>
+  <nav class="mobile-cta" aria-label="Acceso rápido a consulta"><a class="button button-primary" href="#contacto">Agendar consulta</a></nav>
+  <a class="whatsapp-float" href="https://wa.me/59894106828" target="_blank" rel="noopener noreferrer" aria-label="Enviar WhatsApp para agendar consulta">
+    <span class="whatsapp-tooltip">Agendar consulta</span>
+    <svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M12.04 2C6.58 2 2.14 6.44 2.14 11.9c0 1.74.45 3.45 1.31 4.95L2 22l5.28-1.38a9.86 9.86 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.44 9.9-9.9C21.94 6.44 17.5 2 12.04 2Zm0 18.16h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.13.82.84-3.05-.2-.31a8.18 8.18 0 0 1-1.26-4.4c0-4.54 3.7-8.23 8.24-8.23 4.54 0 8.23 3.69 8.23 8.23 0 4.54-3.69 8.23-8.23 8.23Zm4.52-6.17c-.25-.12-1.47-.72-1.7-.8-.23-.08-.39-.12-.56.12-.17.25-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.02 2.57.12.17 1.75 2.67 4.24 3.74.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29Z"/>
+    </svg>
+  </a>
+</body>
+</html>

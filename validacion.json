@@ -1,0 +1,88 @@
+{
+  "fecha": "2026-09-30",
+  "navegador": "153.0.8010.0",
+  "anchos_comprobados": [
+    320,
+    360,
+    375,
+    390,
+    430,
+    600,
+    768,
+    820,
+    900,
+    1023,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "errores_javascript_y_http": [],
+  "accesibilidad_automatizada": [
+    {
+      "width": 390,
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 768,
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 1440,
+      "violations": [],
+      "passes": 23,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 390,
+      "allAccordionsOpen": true,
+      "violations": [],
+      "passes": 26,
+      "incomplete": [
+        "color-contrast"
+      ]
+    }
+  ],
+  "html_validado": true,
+  "ids_unicos": true,
+  "enlaces_internos_validos": true,
+  "sin_scroll_horizontal": true,
+  "zoom_texto_200": {
+    "viewport": 1280,
+    "scrollWidth": 1280
+  },
+  "comprobaciones": [
+    "All disclosure controls open/close with keyboard",
+    "Navigation and accordions work without JavaScript",
+    "Bottom contact action hides when contact section is visible",
+    "Reduced-motion preference respected"
+  ],
+  "limites": [
+    "Sin prueba en dispositivos físicos o Safari",
+    "Sin medición del sitio público",
+    "No constituye certificación WCAG completa"
+  ],
+  "actualizacion_editorial": {
+    "fecha_local": "2026-09-30",
+    "encabezado_conservado": true,
+    "sin_segunda_persona": true,
+    "estructura_y_enlaces_conservados": true,
+    "css_y_js_sin_cambios": true,
+    "nota": "Las pruebas de navegador registradas corresponden a la revisión de diseño previa. Esta actualización modifica textos."
+  },
+  "ultima_revision_textos": {
+    "fecha": "2026-10-01",
+    "cambios": 7,
+    "verificacion": "Revisión de sustituciones y estructura HTML; sin nuevas pruebas de navegador."
+  }
+}
