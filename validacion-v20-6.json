@@ -1,0 +1,18 @@
+{
+  "es_refractive_errors": true,
+  "es_no_defectos": true,
+  "en_refractive_errors": true,
+  "viewport_fit_es": true,
+  "viewport_fit_en": true,
+  "mobile_lang_44": true,
+  "tablet_whatsapp": true,
+  "phone_whatsapp": true,
+  "countup_preserved_es": true,
+  "countup_preserved_en": true,
+  "lens_card_es": true,
+  "lens_card_en": true,
+  "subtitle_es": true,
+  "subtitle_en": true,
+  "assets_present": true,
+  "script_present": true
+}

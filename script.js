@@ -5,6 +5,7 @@
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#navegacion');
   const mobile = window.matchMedia('(max-width: 1023px)');
+  const isEnglish = document.documentElement.lang.toLowerCase().startsWith('en');
 
   if (header && toggle && nav) {
     toggle.hidden = false;
@@ -15,7 +16,7 @@
       nav.classList.toggle('is-open', isOpen);
       document.body.classList.toggle('menu-open', isOpen);
       toggle.setAttribute('aria-expanded', String(isOpen));
-      toggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+      toggle.setAttribute('aria-label', isOpen ? (isEnglish ? 'Close menu' : 'Cerrar menú') : (isEnglish ? 'Open menu' : 'Abrir menú'));
       if (restoreFocus) toggle.focus();
     };
     setMenu(false);
@@ -69,3 +70,73 @@
   const year = document.querySelector('[data-year]');
   if (year) year.textContent = String(new Date().getFullYear());
 })();
+
+
+// V20.5 · Count-up de métricas del hero.
+(() => {
+  const counters = [...document.querySelectorAll('.count-up[data-target]')];
+  if (!counters.length) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const locale = document.documentElement.lang.toLowerCase().startsWith('en') ? 'en-US' : 'es-UY';
+
+  const finalText = (el) => `+${Number(el.dataset.target).toLocaleString(locale)}`;
+
+  if (reduceMotion) {
+    counters.forEach((el) => {
+      el.textContent = finalText(el);
+    });
+    return;
+  }
+
+  let played = false;
+
+  const run = () => {
+    if (played) return;
+    played = true;
+
+    const duration = 950;
+    const start = performance.now();
+
+    counters.forEach((el) => {
+      el.textContent = '+0';
+    });
+
+    const frame = (now) => {
+      const progress = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - progress, 3);
+
+      counters.forEach((el) => {
+        const target = Number(el.dataset.target);
+        const current = Math.floor(target * eased);
+        el.textContent = `+${current.toLocaleString(locale)}`;
+      });
+
+      if (progress < 1) {
+        requestAnimationFrame(frame);
+      } else {
+        counters.forEach((el) => {
+          el.textContent = finalText(el);
+        });
+      }
+    };
+
+    requestAnimationFrame(frame);
+  };
+
+  const proof = document.querySelector('.hero-proof');
+
+  if ('IntersectionObserver' in window && proof) {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        observer.disconnect();
+        run();
+      }
+    }, { threshold: 0.35 });
+
+    observer.observe(proof);
+  } else {
+    run();
+  }
+})();
+

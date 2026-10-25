@@ -1,0 +1,12 @@
+{
+  "es_subtitle": true,
+  "en_subtitle": true,
+  "es_lens_card": true,
+  "en_lens_card": true,
+  "es_counters": true,
+  "en_counters": true,
+  "js_countup": true,
+  "assets_present": true,
+  "css_present": true,
+  "js_present": true
+}

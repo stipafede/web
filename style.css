@@ -482,3 +482,259 @@ details[open]>summary .toggle-symbol::after{transform:rotate(0deg)}
     width:100%;
   }
 }
+
+
+/* V20 · Selector de idioma */
+.lang-switch{
+  display:inline-flex;
+  align-items:center;
+  gap:2px;
+  padding:3px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(255,255,255,.5);
+  flex:none;
+}
+.lang-switch a,
+.lang-switch span{
+  min-width:34px;
+  min-height:32px;
+  padding:6px 9px;
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+  line-height:1;
+  font-weight:700;
+  letter-spacing:.07em;
+  color:var(--muted);
+}
+.lang-switch a:hover{
+  background:var(--tint);
+  color:var(--accent);
+}
+.lang-switch span[aria-current="page"]{
+  background:var(--accent);
+  color:#fff;
+}
+@media(max-width:1023px){
+  .lang-switch{
+    align-self:flex-start;
+    margin-top:4px;
+  }
+}
+
+
+/* V20.4 preview · Técnicas de cirugía refractiva */
+.refractive-techniques{
+  margin-top:54px;
+  padding-top:46px;
+  border-top:1px solid var(--line);
+}
+.refractive-techniques-head{
+  display:grid;
+  grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);
+  gap:48px;
+  align-items:end;
+  margin-bottom:24px;
+}
+.refractive-techniques-head .eyebrow{
+  margin-bottom:0;
+}
+.refractive-techniques-head h3{
+  font:400 clamp(28px,2.6vw,38px)/1.18 var(--display-font);
+  letter-spacing:-.035em;
+  max-width:620px;
+}
+.refractive-technique-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.refractive-technique-card{
+  min-height:176px;
+  padding:28px 30px 30px;
+  background:rgba(255,255,255,.34);
+}
+.refractive-technique-card:nth-child(odd){
+  border-right:1px solid var(--line);
+}
+.refractive-technique-card:nth-child(-n+2){
+  border-bottom:1px solid var(--line);
+}
+.technique-label{
+  display:inline-flex;
+  align-items:center;
+  min-height:30px;
+  padding:5px 11px;
+  border:1px solid #c9d6d0;
+  border-radius:999px;
+  background:var(--tint);
+  color:var(--accent);
+  font-size:12px;
+  line-height:1;
+  font-weight:700;
+  letter-spacing:.04em;
+}
+.refractive-technique-card p{
+  margin-top:18px;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.75;
+  max-width:470px;
+}
+.lens-based-note{
+  margin-top:22px;
+  padding:24px 28px;
+  display:grid;
+  grid-template-columns:minmax(220px,.7fr) minmax(0,1.3fr);
+  gap:34px;
+  align-items:center;
+  border:1px solid var(--soft);
+  border-radius:18px;
+  background:var(--white);
+}
+.lens-based-kicker{
+  display:block;
+  margin-bottom:6px;
+  color:var(--sage);
+  font-size:10px;
+  line-height:1.5;
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  font-weight:700;
+}
+.lens-based-note h3{
+  font:400 24px/1.25 var(--display-font);
+  letter-spacing:-.025em;
+}
+.lens-based-note p{
+  margin:0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.75;
+}
+@media(max-width:899px){
+  .refractive-techniques{
+    margin-top:42px;
+    padding-top:38px;
+  }
+  .refractive-techniques-head{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  .refractive-techniques-head .eyebrow{
+    margin-bottom:4px;
+  }
+  .lens-based-note{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+}
+@media(max-width:600px){
+  .refractive-techniques{
+    margin-top:34px;
+    padding-top:32px;
+  }
+  .refractive-techniques-head h3{
+    font-size:29px;
+  }
+  .refractive-technique-grid{
+    grid-template-columns:1fr;
+  }
+  .refractive-technique-card{
+    min-height:0;
+    padding:22px 0 24px;
+    background:transparent;
+    border-right:0!important;
+    border-bottom:1px solid var(--line)!important;
+  }
+  .refractive-technique-card:last-child{
+    border-bottom:0!important;
+  }
+  .refractive-technique-card p{
+    font-size:15px;
+    margin-top:13px;
+  }
+  .lens-based-note{
+    margin-top:20px;
+    padding:20px;
+  }
+  .lens-based-note h3{
+    font-size:22px;
+  }
+}
+@media print{
+  .refractive-technique-grid{display:grid;grid-template-columns:1fr 1fr}
+  .refractive-technique-card{min-height:0;background:white}
+}
+
+
+/* V20.5 · Cinco opciones de cirugía refractiva */
+.refractive-technique-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.refractive-technique-card:nth-child(odd){
+  border-right:1px solid var(--line);
+}
+.refractive-technique-card:nth-child(-n+2){
+  border-bottom:1px solid var(--line);
+}
+.refractive-technique-card:nth-child(3),
+.refractive-technique-card:nth-child(4){
+  border-bottom:1px solid var(--line);
+}
+.refractive-technique-card:nth-child(5){
+  grid-column:1 / -1;
+  border-right:0;
+}
+.refractive-technique-card:nth-child(5) p{
+  max-width:680px;
+}
+.lens-based-note{
+  display:none!important;
+}
+
+/* V20.5 · Count-up discreto */
+.count-up{
+  font-variant-numeric:tabular-nums;
+}
+@media(max-width:600px){
+  .refractive-technique-card:nth-child(5){
+    grid-column:auto;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .count-up{
+    transition:none!important;
+    animation:none!important;
+  }
+}
+
+
+/* V20.6 · Ajustes finales mobile */
+@media(max-width:899px){
+  /* En tablet no hay barra fija inferior: WhatsApp vuelve cerca del borde. */
+  .whatsapp-float{
+    right:16px;
+    bottom:calc(20px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media(max-width:599px){
+  /* Área táctil mínima cómoda para ES / EN. */
+  .lang-switch a,
+  .lang-switch span{
+    min-width:44px;
+    min-height:44px;
+    padding:0 10px;
+  }
+
+  /* En teléfono, WhatsApp queda por encima de la CTA fija y del home indicator. */
+  .whatsapp-float{
+    right:16px;
+    bottom:calc(78px + env(safe-area-inset-bottom, 0px));
+  }
+}

@@ -2,7 +2,7 @@
 <html lang="es-UY">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#193c46">
   <meta name="description" content="Dr. Federico Stipanicic, oftalmólogo en Uruguay. Consulta oftalmológica, cirugía de catarata, cirugía refractiva y córnea. Evaluación y planificación individual.">
   <title>Dr. Federico Stipanicic · Oftalmología en Uruguay</title>
@@ -10,6 +10,9 @@
   <meta property="og:locale" content="es_UY">
   <meta property="og:title" content="Dr. Federico Stipanicic · Oftalmología">
   <meta property="og:description" content="Consulta oftalmológica, cirugía de catarata y cirugía refractiva. Evaluación clínica y planificación quirúrgica.">
+  <link rel="alternate" hreflang="es-UY" href="index.html">
+  <link rel="alternate" hreflang="en" href="en/index.html">
+  <link rel="alternate" hreflang="x-default" href="index.html">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,9 +35,12 @@
       <button class="menu-toggle" type="button" aria-controls="navegacion" aria-expanded="false" hidden><span class="menu-icon" aria-hidden="true"></span><span class="menu-label">Menú</span></button>
       <nav class="nav" id="navegacion" aria-label="Navegación principal">
         <a href="#especialidades">Especialidades</a>
-        <a href="#sobre-mi">Sobre mí</a>
         <a href="#tecnologia">Tecnología</a>
+        <a href="#sobre-mi">Sobre mí</a>
         <a href="#informacion-util">Preguntas frecuentes</a>
+        <div class="lang-switch" aria-label="Idioma">
+          <span aria-current="page">ES</span><a href="en/index.html" hreflang="en" lang="en">EN</a>
+        </div>
         <a class="button button-primary nav-cta" href="#contacto">Agendar consulta</a>
       </nav>
     </div>
@@ -55,9 +61,9 @@
           <figcaption><strong>Dr. Federico Stipanicic</strong><span>Médico especialista en Oftalmología</span></figcaption>
         </figure>
         <dl class="hero-proof">
-          <div><dt>Años de experiencia quirúrgica</dt><dd>+9</dd></div>
-          <div><dt>Años de docencia universitaria</dt><dd>+10</dd></div>
-          <div><dt>Cirugías oftalmológicas</dt><dd>+2500</dd></div>
+          <div><dt>Años de experiencia quirúrgica</dt><dd class="count-up" data-target="9">+9</dd></div>
+          <div><dt>Años de docencia universitaria</dt><dd class="count-up" data-target="10">+10</dd></div>
+          <div><dt>Cirugías oftalmológicas</dt><dd class="count-up" data-target="2500">+2500</dd></div>
         </dl>
       </div>
     </section>
@@ -101,10 +107,9 @@
 
     <section class="section section-tinted" id="refractiva" aria-labelledby="titulo-refractiva">
       <div class="container treatment-grid image-first">
-        <div class="treatment-copy"><p class="eyebrow">02 · Cirugía refractiva</p><h2 id="titulo-refractiva">Corrección de<br>defectos refractivos.</h2>
+        <div class="treatment-copy"><p class="eyebrow">02 · Cirugía refractiva</p><h2 id="titulo-refractiva">Corrección de<br>errores refractivos.</h2>
           <p class="intro">La cirugía refractiva permite reducir la dependencia de anteojos o lentes de contacto.</p>
-          <p>La elección del procedimiento requiere evaluar la graduación, su estabilidad, las características de la córnea y la salud ocular.</p>
-          <p>Realizo PRK, LASIK, femtoLASIK y CLEAR, además de cirugía con lentes intraoculares en pacientes seleccionados.</p>
+          <p>La técnica más adecuada se define según la graduación, la forma y el espesor de la córnea, la edad, la salud ocular general y las necesidades visuales.</p>
           <div class="accordion">
             <details><summary>Miopía <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Dificulta ver con claridad los objetos a distancia. Las opciones de corrección dependen de la graduación y de las características de cada ojo.</p></div></details>
             <details><summary>Hipermetropía <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><p>Puede dificultar la visión cercana y, en algunos casos, también la lejana. La evaluación permite definir la alternativa más adecuada.</p></div></details>
@@ -113,6 +118,34 @@
           </div>
         </div>
         <figure class="treatment-figure refractive-figure"><img src="assets/refractiva-1100.webp" srcset="assets/refractiva-640.webp 640w, assets/refractiva-1100.webp 1100w" sizes="(min-width: 1200px) 528px, (min-width: 900px) 44vw, calc(100vw - 48px)" width="1100" height="825" loading="lazy" decoding="async" alt="Ilustración conceptual de un ojo durante un tratamiento láser"><figcaption>Ilustración conceptual de cirugía refractiva.</figcaption></figure>
+      </div>
+      <div class="container refractive-techniques" aria-labelledby="titulo-tecnicas-refractivas">
+        <div class="refractive-techniques-head">
+          <p class="eyebrow">Técnicas de cirugía refractiva</p>
+          <h3 id="titulo-tecnicas-refractivas">La elección depende de cada ojo.</h3>
+        </div>
+        <div class="refractive-technique-grid">
+          <article class="refractive-technique-card">
+            <span class="technique-label">PRK</span>
+            <p>El láser modifica la forma de la córnea desde su superficie, sin crear un flap.</p>
+          </article>
+          <article class="refractive-technique-card">
+            <span class="technique-label">LASIK</span>
+            <p>Se crea un fino flap corneal y el láser actúa por debajo para modificar la forma de la córnea.</p>
+          </article>
+          <article class="refractive-technique-card">
+            <span class="technique-label">FemtoLASIK</span>
+            <p>Es una variante de LASIK en la que el flap se crea con un láser de femtosegundo.</p>
+          </article>
+          <article class="refractive-technique-card">
+            <span class="technique-label">CLEAR</span>
+            <p>Se extrae un pequeño lentículo de tejido corneal a través de una pequeña incisión, sin crear un flap.</p>
+          </article>
+          <article class="refractive-technique-card">
+            <span class="technique-label">Lentes intraoculares</span>
+            <p>En pacientes seleccionados, pueden ser una alternativa a la cirugía refractiva corneal.</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -145,7 +178,7 @@
         <div class="about-copy"><p class="eyebrow">Sobre mí</p><h2 id="titulo-sobre-mi">Medicina, docencia<br>y cirugía.</h2>
           <p class="intro">Soy médico especialista en Oftalmología por la Universidad de la República.</p>
           <p>Mi actividad combina atención de pacientes, cirugía, formación continua y docencia universitaria. Comencé a realizar cirugía oftalmológica durante la residencia, en 2017.</p>
-          <dl class="credentials"><div><dt>Docencia universitaria</dt><dd>Docente Asistente, Grado 2 de Oftalmología en la Universidad de la República. Más de una década de docencia en Fisiopatología y Oftalmología.</dd></div><div><dt>Formación internacional</dt><dd>Houston · Sevilla · Buenos Aires · Río de Janeiro · Ciudad de México.</dd></div></dl>
+          <dl class="credentials"><div><dt>Docencia universitaria</dt><dd>Docente Asistente, Grado 2 de Oftalmología en la Universidad de la República. Más de una década de docencia en Fisiopatología y Oftalmología.</dd></div><div><dt>Formación internacional</dt><dd>Houston · Sevilla · Buenos Aires · Río de Janeiro · Ciudad de México.</dd></div><div><dt>Idiomas</dt><dd>Español · Inglés · Portugués · Francés básico</dd></div></dl>
           <details class="academic-details"><summary>Actividad académica y sociedades científicas <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="details-content"><h3>Congresos e investigación</h3><p>Participación como expositor en congresos nacionales e internacionales y en trabajos de investigación científica.</p><h3>Sociedades científicas</h3><ul class="societies"><li><strong>ASCRS</strong><span>American Society of Cataract and Refractive Surgery</span></li><li><strong>ASUO</strong><span>Asociación Uruguaya de Oftalmología</span></li><li><strong>SUCRyC</strong><span>Sociedad Uruguaya de Catarata, Cirugía Refractiva y Córnea</span></li></ul></div></details>
         </div>
         <figure class="treatment-figure about-figure"><img src="assets/quirofano-900.webp" srcset="assets/quirofano-480.webp 480w, assets/quirofano-900.webp 900w" sizes="(min-width: 1200px) 420px, (min-width: 900px) 38vw, (min-width: 600px) 420px, calc(100vw - 48px)" width="900" height="1200" loading="lazy" decoding="async" alt="Dr. Federico Stipanicic durante una intervención quirúrgica"><figcaption>La práctica quirúrgica, parte central de mi actividad.</figcaption></figure>

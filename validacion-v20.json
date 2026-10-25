@@ -1,0 +1,19 @@
+{
+  "index.html": {
+    "has_language_switch": true,
+    "has_whatsapp": true,
+    "has_hreflang": true,
+    "source_serif": true
+  },
+  "en/index.html": {
+    "has_language_switch": true,
+    "has_whatsapp": true,
+    "has_hreflang": true,
+    "source_serif": true
+  },
+  "english": {
+    "html_lang_en": true,
+    "headline_translated": true,
+    "contact_translated": true
+  }
+}

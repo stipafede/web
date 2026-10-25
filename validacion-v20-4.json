@@ -1,0 +1,9 @@
+{
+  "es_approved_sentence": true,
+  "en_approved_sentence": true,
+  "es_cards": true,
+  "en_cards": true,
+  "assets": true,
+  "css": true,
+  "js": true
+}
