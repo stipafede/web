@@ -140,3 +140,43 @@
   }
 })();
 
+
+/* Google Analytics: seguimiento de contactos */
+(() => {
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href]');
+    if (!link || typeof window.gtag !== 'function') return;
+
+    const href = link.getAttribute('href') || '';
+    let eventName = '';
+
+    if (href.startsWith('https://wa.me/')) {
+      eventName = 'click_whatsapp';
+    } else if (href.startsWith('tel:')) {
+      eventName = 'click_phone';
+    } else if (href.startsWith('mailto:')) {
+      eventName = 'click_email';
+    } else if (href === '#contacto') {
+      eventName = 'click_agendar_consulta';
+    }
+
+    if (!eventName) return;
+
+    const location = link.matches('.whatsapp-float')
+      ? 'floating'
+      : link.closest('.site-header')
+      ? 'header'
+      : link.closest('.hero')
+      ? 'hero'
+      : link.closest('.mobile-cta')
+      ? 'mobile'
+      : link.closest('.contact-card')
+      ? 'contact'
+      : 'other';
+
+    window.gtag('event', eventName, {
+      button_location: location,
+      page_language: document.documentElement.lang
+    });
+  });
+})();
