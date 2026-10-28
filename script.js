@@ -141,42 +141,39 @@
 })();
 
 
-/* Google Analytics: seguimiento de contactos */
+
+// V20.9 — CTA inferior solo después del CTA principal en teléfonos.
 (() => {
-  document.addEventListener('click', (event) => {
-    const link = event.target.closest('a[href]');
-    if (!link || typeof window.gtag !== 'function') return;
+  'use strict';
+  const heroAction = document.querySelector('#hero-mobile-appointment');
+  const bar = document.querySelector('.mobile-cta');
+  const contact = document.querySelector('#contacto');
+  const header = document.querySelector('.site-header');
+  const phone = window.matchMedia('(max-width:599px)');
+  if (!heroAction || !bar) return;
 
-    const href = link.getAttribute('href') || '';
-    let eventName = '';
-
-    if (href.startsWith('https://wa.me/')) {
-      eventName = 'click_whatsapp';
-    } else if (href.startsWith('tel:')) {
-      eventName = 'click_phone';
-    } else if (href.startsWith('mailto:')) {
-      eventName = 'click_email';
-    } else if (href === '#contacto') {
-      eventName = 'click_agendar_consulta';
+  let scheduled = false;
+  const update = () => {
+    scheduled = false;
+    if (!phone.matches) {
+      bar.classList.remove('is-visible');
+      return;
     }
-
-    if (!eventName) return;
-
-    const location = link.matches('.whatsapp-float')
-      ? 'floating'
-      : link.closest('.site-header')
-      ? 'header'
-      : link.closest('.hero')
-      ? 'hero'
-      : link.closest('.mobile-cta')
-      ? 'mobile'
-      : link.closest('.contact-card')
-      ? 'contact'
-      : 'other';
-
-    window.gtag('event', eventName, {
-      button_location: location,
-      page_language: document.documentElement.lang
-    });
-  });
+    const topBoundary = header ? header.getBoundingClientRect().bottom : 0;
+    const passedHero = heroAction.getBoundingClientRect().bottom < topBoundary;
+    // Hide before reaching the contact section, rather than covering its content.
+    const contactApproaching = contact && contact.getBoundingClientRect().top < window.innerHeight * 0.78;
+    bar.classList.toggle('is-visible', passedHero && !contactApproaching);
+  };
+  const requestUpdate = () => {
+    if (scheduled) return;
+    scheduled = true;
+    window.requestAnimationFrame(update);
+  };
+  window.addEventListener('scroll', requestUpdate, { passive:true });
+  window.addEventListener('resize', requestUpdate, { passive:true });
+  if (phone.addEventListener) phone.addEventListener('change', requestUpdate);
+  else phone.addListener(requestUpdate);
+  window.addEventListener('pageshow', requestUpdate);
+  update();
 })();

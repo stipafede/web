@@ -738,3 +738,67 @@ details[open]>summary .toggle-symbol::after{transform:rotate(0deg)}
     bottom:calc(78px + env(safe-area-inset-bottom, 0px));
   }
 }
+
+
+/* V20.9 — Portada móvil simplificada aprobada (desktop sin rediseño). */
+.mobile-hero-cta{display:none}
+
+@media(max-width:599px){
+  /* Primero identidad y fotografía; un único CTA debajo del retrato. */
+  .hero{padding-top:24px;padding-bottom:40px}
+  .hero-grid{
+    grid-template-columns:minmax(0,1fr);
+    grid-template-areas:'copy' 'portrait' 'mobile-action' 'proof';
+    gap:0;
+  }
+  .hero-copy{max-width:100%}
+  .hero h1{font-size:clamp(36px,10.8vw,48px);line-height:1.075;text-wrap:balance}
+  .hero h1 em{display:block}
+  .hero-specialties{font-size:13px;margin-top:18px;margin-bottom:20px;line-height:1.55}
+  .hero-copy .hero-lead,.hero-copy .hero-actions{display:none}
+  .hero-portrait{
+    max-width:100%;width:100%;justify-self:stretch;
+    border-radius:110px 8px 8px 8px;
+    margin:0;
+  }
+  .hero-portrait img{
+    display:block;width:100%;height:clamp(260px,88vw,360px);
+    aspect-ratio:auto;object-fit:cover;object-position:center 19%;
+  }
+  .hero-portrait figcaption{display:none}
+  .mobile-hero-cta{grid-area:mobile-action;display:block;min-width:0;margin-top:20px}
+  .mobile-hero-cta .button{width:100%;min-height:52px;font-size:15px;justify-content:center}
+  .mobile-hero-note{margin:11px 0 0;text-align:center;font-size:13px;line-height:1.65;color:var(--muted)}
+  .hero-proof{margin-top:24px;max-width:100%;width:100%;justify-self:stretch;padding-top:20px;gap:12px}
+  .hero-proof dd{font-size:30px}
+  .hero-proof dt{font-size:11px}
+
+  /* La barra fija se revela sólo DESPUÉS de superar el CTA del hero. */
+  .mobile-cta{
+    visibility:hidden;opacity:0;pointer-events:none;
+    transform:translateY(105%);
+    transition:transform .22s ease,opacity .22s ease,visibility .22s;
+  }
+  .mobile-cta.is-visible{visibility:visible;opacity:1;pointer-events:auto;transform:translateY(0)}
+  body.contact-visible .mobile-cta,
+  body.menu-open .mobile-cta,
+  body.focus-at-footer .mobile-cta{
+    visibility:hidden;opacity:0;pointer-events:none;transform:translateY(105%);
+  }
+  .mobile-cta .button{justify-content:center}
+
+  /* En mobile eliminamos el tercer acceso flotante a WhatsApp. */
+  .whatsapp-float{display:none!important}
+}
+@media(max-width:359px){
+  .hero h1{font-size:clamp(34px,10.6vw,38px)}
+  .hero-specialties{font-size:12px}
+  .hero-portrait{border-top-left-radius:86px}
+  .hero-portrait img{height:clamp(250px,88vw,310px)}
+}
+@media(max-width:599px) and (max-height:520px){
+  .mobile-cta{display:none!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .mobile-cta{transition:none}
+}
